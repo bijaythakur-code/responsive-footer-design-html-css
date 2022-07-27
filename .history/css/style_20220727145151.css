@@ -1,0 +1,150 @@
+:root {
+  /* COLOR VARIABLES */
+  --footer-background-color: #222831;
+  --footer-heading-color: #ffffff;
+  --footer-link-color: #d3d4d6;
+  --footer-link-hover-color: #c8b568;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1120px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+/* ====== Footer ======= */
+
+.logo {
+  height: 80px;
+}
+
+.footer {
+  padding: 128px 0;
+  border-top: 1px solid #eee;
+  background-color: var(--footer-background-color);
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  column-gap: 64px;
+  row-gap: 96px;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.social-links {
+  display: flex;
+  gap: 24px;
+}
+
+.social-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.social-icon:hover {
+  color: var(--footer-link-hover-color);
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--footer-link-color);
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: var(--footer-heading-color);
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 24px;
+  color: var(--footer-link-color);
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--footer-link-color);
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+
+/* ============= BELOW 896px =========== */
+@media (max-width: 56em) {
+  .footer-wrapper {
+    column-gap: 40px;
+    row-gap: 72px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+
+  .footer-heading {
+    font-size: 16px;
+  }
+
+  .contacts {
+    font-size: 14px;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 14px;
+  }
+}
+
+/* ============= BELOW 752px =========== */
